@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+    
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                top: 0;
+                width: 100%;
+                position: fixed;
+                }
+        
+            li {
+                float: left;
+                }
+        
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family:Arial, Helvetica, sans-serif;
+                }
+        
+            li a:hover {
+                background-color: #111;
+                }
+
+            #Title {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                }
+
+            #people {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+
+            #upload_data {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+            }
+
+            #upload-button {
+                background-color: black;
+                border: none;
+                color: white;
+                padding: 5px 5px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 11px;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+            
+            #select-file {
+                background-color: none;
+                border: none;
+                color: white;
+                padding: 5px 5px;
+                text-align: center;
+                display: inline-block;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 11px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upload-subpage.html">Upload & Analyze Your Data</a></li>
+        </ul>
+        <hr/>
+        <hr/>
+        <hr/>
+        <hr/>
+        <h1 id="Title">Website Title</h1>
+        <h3 id="people">By: Melis, Elyz, Will, Everett</h3>
+        <hr/>
+        <h3 id="upload_data">Upload your XML file here:</h3>
+        <input id="select-file" type="file"/>
+        <button id="upload-button" onclick="uploadFile()"> Upload </button>
+        </p>
+        <hr/>
+        
+    </body>
+</html>
