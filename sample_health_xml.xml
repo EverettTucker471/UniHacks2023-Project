@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<health_data>
+  <long_term_variables id="long-term">
+	<name>Elyz Katz</name>
+ 	<dateOfBirth>09/19/2006</dateOfBirth>
+ 	<sex>Female</sex>
+ 	<height>?</height>
+ 	<weight>?</weight>
+ 	<bloodType>?</bloodType>
+  </long_term_variables>
+  <daily_variables>
+  	<date> date </date>
+  	<steps> steps </steps>
+  	<floors_climbed> 3 </floors_climbed>
+  	<calories_burned> calories_burned </calories_burned>
+  	<min_heart_rate> min_heart_rate </min_heart_rate>
+  	<avg_heart_rate>avg_heart_rate </avg_heart_rate>
+  	<max_heart_rate> max_heart_rate </max_heart_rate>
+  	<time_slept> time_slept </time_slept>
+  </daily_variables>
+</health_data>
+
