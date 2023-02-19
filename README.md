@@ -1,6 +1,6 @@
 # Health Data Interface
-# This website reads and parses an XML file and displays health data to a user. It also computes health statistics such as VO2 max, and target heart rates for various exercise intensities.
-# ## Inspiration
+This website reads and parses an XML file and displays health data to a user. It also computes health statistics such as VO2 max, and target heart rates for various exercise intensities.
+## Inspiration
 Our inspiration for Health Data Interface was wanting to give people more individualized feedback about their health. We also desired to make it convenient for people to use, so they could continue using their devices and gain additional insights.
 ## What it does
 Our website allows a user to input an XML file and see their health data, along with individualized statistics. XML files are the most common type of exported data for fitness trackers, but they are difficult to read alone. Our website transforms the hard-to-read XML file into an intuitive interface. It also displays statistics for the user, such as maximum heart rate, heart rate reserve, maximum exertion, VO2 Max, and target heart rates for various exercise intensities.
