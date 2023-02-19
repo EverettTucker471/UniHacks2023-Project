@@ -1,0 +1,21 @@
+#long-term-data th, #long-term-data, #short-term-data th, #short-term-data {
+    padding: 5px;
+  }
+  
+  #long-term-data, #short-term-data {
+    font-family: Rubik;
+    border-collapse: collapse;
+  }
+  
+  #long-term-div, #short-term-div {
+    background-color: rgb(239,141,179);
+    display: inline-grid;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #long-term-data tr:nth-child(odd), #short-term-data tr:nth-child(odd) {
+    background-color: rgba(0,0,0, 0.15);
+  }
+  
+  
