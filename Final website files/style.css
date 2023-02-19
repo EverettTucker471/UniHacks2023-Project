@@ -1,0 +1,22 @@
+#long-term-data th, #long-term-data, #short-term-data th, #short-term-data {
+    padding: 5px;
+  }
+  
+  #long-term-data, #short-term-data {
+    font-family: Rubik;
+    border-collapse: collapse;
+    color: white;
+  }
+  
+  #long-term-div, #short-term-div {
+    background-color: #174d2d;
+    display: inline-grid;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #long-term-data tr:nth-child(even), #short-term-data tr:nth-child(even) {
+    background-color: #35b166;
+  }
+  
+  
