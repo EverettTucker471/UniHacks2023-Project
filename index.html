@@ -1,28 +1,118 @@
 <!DOCTYPE html>
 <html lang='en'>
+<head>
+    <style>
+    body {
+        background-color: rgb(209, 223, 212);
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #174d2d;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        }
+
+    li {
+        float: left;
+        }
+
+    li a {
+        display: block;
+        color: rgb(188, 206, 192);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+
+    li a:hover {
+        background-color: #111;
+        }
+
+        #Title {
+            margin-top: 70px;
+            margin-bottom: 70px;
+            margin-right: 250px;
+            margin-left: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        #people {
+            margin-right: 250px;
+            margin-left: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        #description {
+            margin-right: 250px;
+            margin-left: 250px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        #description_paragraph {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-right: 250px;
+            margin-left: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        #project_importance{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-right: 250px;
+            margin-left: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        #importance_paragraph {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-right: 250px;
+            margin-left: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+    </style>
+
+    <meta charset='UTF-8'/>
+    <title>UniHacks2023</title>
+    <link rel='stylesheet' href='styles.css'/>
+</head>
+
+<body>
     <ul>
-        <li><a href="upload-subpage.html">Upload & Analyze Your Data</a></li>
-        <li><a href="index.html">Home</a></li>
+        <li><a class = "active" href="index.html">Home</a></li>
+        <li><a href = "upload-subpage.html">Upload & Analyze Your Data</a></li>
     </ul>
-    <head>
-        <meta charset='UTF-8'/>
-        <title>TITLE</title>
-        <link rel='stylesheet' href='styles.css'/>
-    </head>
-    <body>
-        <h1>Website Title</h1>
-        <h3 id="persons">By: Melis, Elyz, Will, Everett</h3>
-        <hr/>
-        <h2>Project Description:</h2>
-        <p>Data can be exported from Apple's Health app in XML format. The objective of this project is to
-        create a website which the user can use to upload their data and visualize it. The website will also analyze
-        the data to display fitness score and give personalized recommendations.</p>
-        <p>Why is our project important?</p>
-        <p>This website helps users track their daily activies. For example, you can easily information such as how many
-             miles you walked, how many hours you slept, or how many calories you burned today. You can also see your minimum, 
-             maximum, and average heart rate. 
-        </p>
-        <hr/>
-        
-    </body>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <h1 id="Title">Health Data Interface</h1>
+            <h3 id = "people">By: Melis, Elyz, Will, Everett</h3>
+    <hr/>
+        <h2 id="description">Project Description:</h2>
+                <p id="description_paragraph">Data can be exported from Apple's Health app in XML format. The objective of this project is to
+                create a website which the user can use to upload their data and visualize it. The website will also analyze
+                the data to display fitness score and give personalized recommendations.</p>
+            <h2 id = "project_importance">Why is our project important?</h2>
+                <p id="importance_paragraph">This website helps users track their daily activies. For example, you can easily information such as how many
+                miles you walked, how many hours you slept, or how many calories you burned today. You can also see your minimum, 
+                maximum, and average heart rate. 
+                </p>
+    <hr/> 
+</body>
+
 </html>
