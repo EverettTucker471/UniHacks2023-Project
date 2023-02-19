@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<health_data>
+ <long_term_variables>
+ <dateOfBirth> 11/23/1989 </dateOfBirth>
+ <sex> M </sex>
+ <height> 180 </height>
+ <weight> 68 </weight>
+ <bloodType> AB+ </bloodType>
+</long_term_variables>
+ <daily_variables>
+  <date> 01/12/2023 </date>
+  <steps> 8462 </steps>
+  <floors_climbed> 7 </floors_climbed>
+  <calories_burned> 2113 </calories_burned>
+  <min_heart_rate> 63 </min_heart_rate>
+  <avg_heart_rate> 85 </avg_heart_rate>
+  <max_heart_rate> 189 </max_heart_rate>
+  <time_slept> 07:48 </time_slept>
+ </daily_variables>
+</health_data>
