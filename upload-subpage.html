@@ -1,27 +1,108 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <ul>
-        <li><a href="upload-subpage.html">Upload & Analyze Your Data</a></li>
-        <li><a href="index.html">Home</a></li>
-    </ul>
+    
     <head>
-        <meta charset='UTF-8'/>
-        <title>Data</title>
-        <link rel='stylesheet' href='styles.css'/>
-    </head>
-    <body>
-            <h2>Upload File</h2>
-             
-            <p>Upload an XML file: </p>
-            <form>
-                <input id="select_file" type="file" />
-                <button id="upload-button"
-            onclick="uploadFile()"> Upload </button>
-            </form>
-              
-            <h2>Data Display:</h2>
-              
-            <h2>Personalized Recommendations:</h2>
+        <style>
+            body {
+            background-color: rgb(209, 223, 212);
+             }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #174d2d;
+                top: 0;
+                width: 100%;
+                position: fixed;
+                }
+        
+            li {
+                float: left;
+                }
+        
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family:Arial, Helvetica, sans-serif;
+                }
+        
+            li a:hover {
+                background-color: #111;
+                }
+
+            #Title {
+                margin-right: 250px;
+                margin-left: 250px;
+                margin-top: 70px;
+                margin-bottom: 70px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                }
+
+            #people {
+                margin-right: 250px;
+                margin-left: 250px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+
+            #upload_data {
+                margin-right: 250px;
+                margin-left: 250px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+            }
+
+            #upload-button {
+                margin-right: 250px;
+                margin-left: 250px;
+                background-color: black;
+                border: none;
+                color: white;
+                padding: 5px 5px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 11px;
+                font-family: Arial, Helvetica, sans-serif;
+                }
             
+            #select-file {
+                margin-right: 250px;
+                margin-left: 250px;
+                background-color: none;
+                border: none;
+                color: white;
+                padding: 5px 5px;
+                text-align: center;
+                display: inline-block;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 11px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upload-subpage.html">Upload & Analyze Your Data</a></li>
+        </ul>
+        <hr/>
+        <hr/>
+        <hr/>
+        <hr/>
+        <h1 id="Title">Health Data Interface</h1>
+        <h3 id="people">By: Melis, Elyz, Will, Everett</h3>
+        <hr/>
+        <h3 id="upload_data">Upload your XML file here:</h3>
+        <input id="select-file" type="file"/>
+        <button id="upload-button" onclick="uploadFile()"> Upload </button>
+        </p>
+        <hr/>
+        
     </body>
 </html>
