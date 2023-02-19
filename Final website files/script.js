@@ -1,4 +1,5 @@
-var input = document.getElementById("select-file");
+var input = document.getElementById("select_file");
+var textarea = document.getElementById("text-container");
 var preview = document.getElementById("image-container");
 var long_term_body = document.getElementById("long-term-body");
 
@@ -28,9 +29,29 @@ function buildShortTable(xml) {
       row_element.style["text-align"] = "center";
     }
   }
+  // Setting Varibles for Computation
+  var height = xmlDoc.getElementsByTagName("height")[0].firstChild.nodeValue;
+  var minHR = xmlDoc.getElementsByTagName("min_heart_rate")[0].firstChild.nodeValue;
+  var maxHR = xmlDoc.getElementsByTagName("max_heart_rate")[0].firstChild.nodeValue
+  var DoB = xmlDoc.getElementsByTagName("dateOfBirth")[0].firstChild.nodeValue
+  var weight = xmlDoc.getElementsByTagName("weight")[0].firstChild.nodeValue
+  var steps = xmlDoc.getElementsByTagName("steps")[0].firstChild.nodeValue
+  var dateArray = DoB.split("/")
+  var age = 2023 - dateArray[2]
+  var calcHR = 206.9 - (0.67 * age) // Add this as threshold heart rate
+  var maxExertion = maxHR/calcHR * 100 // Add this
+  var HRR = maxHR - minHR // Add this
+  var VO2Max = 15.3 * (calcHR / minHR) // Add this
+  var activeCalories = height * steps * weight * 0.0000031539179 // Add this - Magical Coeffcient
+  document.getElementById('Max_HR').innerHTML = maxHR
+  document.getElementById('maxExertion').innerHTML = maxExertion
+  document.getElementById('HRR').innerHTML = HRR
+  document.getElementById('VO2Max').innerHTML = VO2Max
+  document.getElementById('active_cal').innerHTML = activeCalories
 }
 
-function uploadFile() { // when upload button is clicked
+
+function uploadFile() { // when upload button is clickedam
     let files = input.files;
 
     if (files.length == 0) return; // file must exist
